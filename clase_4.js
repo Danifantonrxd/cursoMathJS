@@ -28,9 +28,9 @@ PlatziMath.arrayPar = function arrayPar(arr){ //Devuelve true si es par, false s
 }
 
 PlatziMath.mediana = function mediana(arr){
-    arr.sort((a, b) => a - b);//Ordena los elementos de menor a mayor no se como
+    arr.sort((a, b) => a - b);//Ordena los elementos de menor a mayor 
 
-    if(arrayPar(arr)){
+    if(PlatziMath.arrayPar(arr)){
         let mitad = arr.length/2;
         let result = (arr[mitad] + arr[mitad-1]) / 2;
         return result;
